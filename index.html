@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANDRIANIRINA LUCIEN BARSON</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#f97316'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .progress-bar {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #e5e7eb;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 1s ease-in-out;
+        }
+        .timeline-dot {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #3b82f6;
+            position: absolute;
+            left: -8px;
+            top: 24px;
+        }
+        .timeline-line {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background-color: #e5e7eb;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 50px;
+            height: 4px;
+            background-color: #3b82f6;
+            border-radius: 2px;
+        }
+        .language-level {
+            height: 6px;
+            border-radius: 3px;
+            background-color: #e5e7eb;
+            overflow: hidden;
+        }
+        .language-fill {
+            height: 100%;
+            border-radius: 3px;
+            background-color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                    <img src="LUCIENANDRIANIRINA.jpeg" alt="ANDRIANIRINA LUCIEN BARSON" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-900">ANDRIANIRINA LUCIEN BARSON</h1>
+                    <p class="text-primary font-medium">Spécialiste en Production Multimédia</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-start md:items-center gap-3">
+                <div class="flex items-center text-gray-600">
+                    <div class="w-8 h-8 flex items-center justify-center mr-2">
+                        <i class="ri-map-pin-line text-primary"></i>
+                    </div>
+                    <span>Bazarikely 614 FORT-DAUPHIN</span>
+                </div>
+                <div class="flex items-center text-gray-600">
+                    <div class="w-8 h-8 flex items-center justify-center mr-2">
+                        <i class="ri-phone-line text-primary"></i>
+                    </div>
+                    <span>0342735579</span>
+                </div>
+                <div class="flex items-center text-gray-600">
+                    <div class="w-8 h-8 flex items-center justify-center mr-2">
+                        <i class="ri-mail-line text-primary"></i>
+                    </div>
+                    <span>andrianirinalucien3@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-white to-blue-50 py-16 overflow-hidden">
+        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center">
+            <div class="w-full lg:w-1/2 mb-10 lg:mb-0 pr-0 lg:pr-12">
+                <h2 class="section-title text-3xl font-bold text-gray-900 mb-6">OBJECTIF</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                    Je cherche un poste à responsabilités de la production multimédias : photos et vidéos. Je suis dynamique, organisé, à l'écoute des autres, possédant l'esprit d'équipe. J'aime apprendre et me dépasser chaque jour, relever des défis ne me fait pas peur.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#competences" class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-blue-600 transition-colors">Mes compétences</a>
+                    <a href="#projets" class="bg-white text-primary border border-primary px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-blue-50 transition-colors">Voir mes projets</a>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <img src="https://readdy.ai/api/search-image?query=professional%20multimedia%20producer%20working%20with%20camera%20and%20computer%20equipment%20in%20a%20modern%20studio%2C%20creative%20workspace%20with%20video%20and%20photo%20equipment%2C%20soft%20lighting%2C%20professional%20environment&width=600&height=400&seq=2&orientation=landscape" alt="Production multimédia" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences Section -->
+    <section id="competences" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold text-gray-900">COMPÉTENCES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="ri-html5-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">HTML</h3>
+                    </div>
+                    <div class="progress-bar mb-2">
+                        <div class="progress-fill bg-primary" style="width: 40%"></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-sm text-gray-500">Débutant</span>
+                        <span class="text-sm font-medium text-primary">40%</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="ri-adobe-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">ADOBE</h3>
+                    </div>
+                    <div class="progress-bar mb-2">
+                        <div class="progress-fill bg-primary" style="width: 60%"></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-sm text-gray-500">Intermédiaire</span>
+                        <span class="text-sm font-medium text-primary">60%</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="ri-computer-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Informatique bureautique</h3>
+                    </div>
+                    <div class="progress-bar mb-2">
+                        <div class="progress-fill bg-primary" style="width: 60%"></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-sm text-gray-500">Intermédiaire</span>
+                        <span class="text-sm font-medium text-primary">60%</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="ri-blender-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Blender</h3>
+                    </div>
+                    <div class="progress-bar mb-2">
+                        <div class="progress-fill bg-primary" style="width: 60%"></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-sm text-gray-500">Intermédiaire</span>
+                        <span class="text-sm font-medium text-primary">60%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expériences Section -->
+    <section id="experiences" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold text-gray-900">EXPÉRIENCES PROFESSIONNELLES</h2>
+            <div class="relative pl-8 mt-12">
+                <div class="timeline-line"></div>
+                
+                <div class="relative mb-12">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm ml-6 border border-gray-100">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Production du son</h3>
+                        <p class="text-primary font-medium mb-3">Radio Fanjiry</p>
+                        <p class="text-gray-600">
+                            Responsable de la production sonore pour les émissions radio, incluant l'enregistrement, le mixage et le mastering des contenus audio.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="relative mb-12">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm ml-6 border border-gray-100">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Structuration graphique</h3>
+                        <p class="text-primary font-medium mb-3">TAZOOM</p>
+                        <p class="text-gray-600">
+                            Conception et réalisation de supports graphiques pour différentes campagnes de communication et projets multimédias.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm ml-6 border border-gray-100">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Supervision de la production vidéo</h3>
+                        <p class="text-primary font-medium mb-3">Projets indépendants</p>
+                        <p class="text-gray-600">
+                            Supervision de la production vidéo, incluant l'écriture de scripts, le tournage, et le montage. Création et montage de vidéos promotionnelles, institutionnelles et éducatives en utilisant des logiciels comme Adobe Premiere Pro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projets" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold text-gray-900">MES PROJETS</h2>
+            <div class="flex flex-wrap gap-4 mb-8 mt-8">
+                <button class="bg-primary text-white px-4 py-2 !rounded-button whitespace-nowrap font-medium">Tous</button>
+                <button class="bg-white text-gray-700 border border-gray-200 px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-gray-50">Vidéo</button>
+                <button class="bg-white text-gray-700 border border-gray-200 px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-gray-50">Photo</button>
+                <button class="bg-white text-gray-700 border border-gray-200 px-4 py-2 !rounded-button whitespace-nowrap font-medium hover:bg-gray-50">Audio</button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 transition-transform hover:shadow-md hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20video%20production%20scene%2C%20camera%20equipment%20filming%20in%20a%20studio%2C%20cinematic%20lighting%20setup%2C%20high-quality%20video%20production%20environment&width=400&height=300&seq=3&orientation=landscape" alt="Projet vidéo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Campagne promotionnelle</h3>
+                        <p class="text-gray-600 mb-4">Série de vidéos promotionnelles pour une entreprise locale, incluant le tournage et le montage.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-primary font-medium">Vidéo</span>
+                            <button class="text-gray-700 hover:text-primary">
+                                <div class="w-8 h-8 flex items-center justify-center">
+                                    <i class="ri-eye-line"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 transition-transform hover:shadow-md hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20photography%20session%2C%20photographer%20with%20DSLR%20camera%20taking%20portraits%20in%20a%20studio%20with%20lighting%20equipment%2C%20professional%20photo%20shoot%20setup&width=400&height=300&seq=4&orientation=landscape" alt="Projet photo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Série photographique</h3>
+                        <p class="text-gray-600 mb-4">Portfolio de portraits professionnels pour une agence de communication locale.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-primary font-medium">Photo</span>
+                            <button class="text-gray-700 hover:text-primary">
+                                <div class="w-8 h-8 flex items-center justify-center">
+                                    <i class="ri-eye-line"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 transition-transform hover:shadow-md hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20audio%20recording%20studio%2C%20sound%20mixing%20console%2C%20microphones%20and%20audio%20equipment%2C%20professional%20sound%20engineering%20workspace&width=400&height=300&seq=5&orientation=landscape" alt="Projet audio" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Production radio</h3>
+                        <p class="text-gray-600 mb-4">Conception et réalisation d'une émission radio hebdomadaire pour Radio Fanjiry.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-primary font-medium">Audio</span>
+                            <button class="text-gray-700 hover:text-primary">
+                                <div class="w-8 h-8 flex items-center justify-center">
+                                    <i class="ri-eye-line"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Compétences Linguistiques Section -->
+    <section id="langues" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold text-gray-900">COMPÉTENCES LINGUISTIQUES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="ri-english-input text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Anglais</h3>
+                    </div>
+                    <div class="language-level mb-2">
+                        <div class="language-fill" style="width: 60%"></div>
+                    </div>
+                    <p class="text-gray-600">Intermédiaire</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="ri-france-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Français</h3>
+                    </div>
+                    <div class="language-level mb-2">
+                        <div class="language-fill" style="width: 90%"></div>
+                    </div>
+                    <p class="text-gray-600">Courant</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="ri-earth-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Malagasy</h3>
+                    </div>
+                    <div class="language-level mb-2">
+                        <div class="language-fill" style="width: 100%"></div>
+                    </div>
+                    <p class="text-gray-600">Maternelle</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formation Section -->
+    <section id="formation" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold text-gray-900">FORMATIONS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="ri-graduation-cap-line text-primary ri-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-1">Diplôme en communication multimédia</h3>
+                            <p class="text-primary font-medium mb-2">2023-2024</p>
+                            <p class="text-gray-600">En troisième année j'ai obtenu un diplôme en communication multimédia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="ri-graduation-cap-line text-primary ri-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-1">Diplôme DTS en RPM</h3>
+                            <p class="text-primary font-medium mb-2">2022-2023</p>
+                            <p class="text-gray-600">En Deuxième année j'ai obtenu un diplôme DTS en RPM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="ri-graduation-cap-line text-primary ri-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-1">L1 en relation publique multimédia</h3>
+                            <p class="text-primary font-medium mb-2">2021-2022</p>
+                            <p class="text-gray-600">Première année universitaire en relations publiques multimédia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="ri-graduation-cap-line text-primary ri-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-1">BACC A2</h3>
+                            <p class="text-primary font-medium mb-2">2020-2021</p>
+                            <p class="text-gray-600">BACC A2 à l'école SACRE COEUR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intérêts Section -->
+    <section id="interets" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-3xl font-bold text-gray-900">INTÉRÊTS</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition-transform hover:shadow-md hover:-translate-y-1">
+                    <div class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="ri-volleyball-line text-primary ri-2x"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Volley-ball</h3>
+                    <p class="text-gray-600">Pratique régulière en club et compétitions amicales</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition-transform hover:shadow-md hover:-translate-y-1">
+                    <div class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="ri-camera-line text-primary ri-2x"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Photographie</h3>
+                    <p class="text-gray-600">Passion pour la photographie de paysage et portrait</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition-transform hover:shadow-md hover:-translate-y-1">
+                    <div class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="ri-music-line text-primary ri-2x"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Musique</h3>
+                    <p class="text-gray-600">Écoute et production de musique électronique</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition-transform hover:shadow-md hover:-translate-y-1">
+                    <div class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="ri-pages-line text-primary ri-2x"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Animation de contenu</h3>
+                    <p class="text-gray-600">Création et gestion de contenu pour réseaux sociaux</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Intéressé par mon profil ?</h2>
+                <p class="text-lg text-gray-700 mb-8">N'hésitez pas à me contacter pour discuter de vos projets ou opportunités professionnelles.</p>
+                <a href="mailto:andrianirinalucien3@gmail.com" class="bg-primary text-white px-8 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-blue-600 transition-colors inline-flex items-center">
+                    <div class="w-5 h-5 flex items-center justify-center mr-2">
+                        <i class="ri-mail-send-line"></i>
+                    </div>
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold mb-2">ANDRIANIRINA LUCIEN BARSON</h2>
+                    <p class="text-gray-400">Spécialiste en Production Multimédia</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <i class="ri-behance-line"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 ANDRIANIRINA LUCIEN BARSON. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation for progress bars
+            const progressBars = document.querySelectorAll('.progress-fill');
+            progressBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>
